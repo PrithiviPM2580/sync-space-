@@ -1,9 +1,9 @@
 export const getEnv = (key: string, defaultValue?: string): string => {
-  const value = process.env[key];
+	const value = process.env[key];
 
-  if (value !== undefined && value !== "") return value;
+	if (value !== undefined && value !== "") return value;
 
-  if (defaultValue !== undefined) return defaultValue;
+	if (defaultValue !== undefined) return defaultValue;
 
-  throw new Error(`Environment variable ${key} is not defined`);
+	throw new Error(`Environment variable ${key} is not defined`);
 };
