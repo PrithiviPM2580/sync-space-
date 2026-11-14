@@ -1,0 +1,32 @@
+@baseurl = http://localhost:3000/api
+
+### Register a new user
+POST {{baseurl}}/auth/register
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "securepassword123"
+}
+
+###
+
+### Login an existing user
+POST {{baseurl}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "john.doe@example.com",
+    "password": "securepassword123"
+}
+
+###
+
+### Logout the current user
+POST {{baseurl}}/auth/logout
+
+###
+
+### Get the current authenticated user's profile
+GET {{baseurl}}/auth/current-user
