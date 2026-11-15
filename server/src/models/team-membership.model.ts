@@ -40,7 +40,7 @@ const teamMembershipSchema = new Schema<ITeamMembership>(
 teamMembershipSchema.index({ teamId: 1, userId: 1 }, { unique: true });
 teamMembershipSchema.index({ workspaceId: 1, userId: 1 });
 
-export const TeamMembershipModel = model<ITeamMembership>(
+export const TeamMembership = model<ITeamMembership>(
 	"TeamMembership",
 	teamMembershipSchema,
 );

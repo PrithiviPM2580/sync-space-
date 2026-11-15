@@ -42,7 +42,4 @@ membershipSchema.index({ userId: 1, workspaceId: 1 }, { unique: true });
 membershipSchema.index({ workspaceId: 1, role: 1 });
 membershipSchema.index({ userId: 1 });
 
-export const MembershipModel = model<IMembership>(
-	"Membership",
-	membershipSchema,
-);
+export const Membership = model<IMembership>("Membership", membershipSchema);

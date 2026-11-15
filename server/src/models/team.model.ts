@@ -39,4 +39,4 @@ const teamSchema = new Schema<ITeam>(
 teamSchema.index({ workspaceId: 1, slug: 1 }, { unique: true });
 teamSchema.index({ workspaceId: 1 });
 
-export const TeamModel = model<ITeam>("Team", teamSchema);
+export const Team = model<ITeam>("Team", teamSchema);

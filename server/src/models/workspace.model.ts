@@ -67,7 +67,7 @@ workspaceSchema.set("toJSON", {
 	},
 });
 
-export const WorkspaceModel: Model<IWorkspace> = model<IWorkspace>(
+export const Workspace: Model<IWorkspace> = model<IWorkspace>(
 	"Workspace",
 	workspaceSchema,
 	"workspaces",
